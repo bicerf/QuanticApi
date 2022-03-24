@@ -51,12 +51,12 @@ namespace QuanticApi.API.Controllers
             if (response.IsSucceeded)
             {
                 
-                return Ok(response.IsSucceeded);
+                return Ok(response);
 
             }
             else
             {
-                return BadRequest(response.ErrorMessage);
+                return Ok(response);
             }
 
         }

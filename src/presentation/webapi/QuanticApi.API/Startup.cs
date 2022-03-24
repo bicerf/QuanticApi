@@ -47,6 +47,7 @@ namespace QuanticApi.API
             {
                 opt.UseSqlServer(Configuration.GetConnectionString("LocalDb"));
             });
+
             services.AddScoped<IUserRegisterService, UserRegisterService>();
             services.AddScoped<IUserLoginService, UserLoginService>();
             
